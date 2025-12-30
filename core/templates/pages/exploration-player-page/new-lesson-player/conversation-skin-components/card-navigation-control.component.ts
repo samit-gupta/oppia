@@ -234,4 +234,7 @@ export class CardNavigationControlComponent {
   onClickContinueButton(): void {
     this.conversationFlowService.showUpcomingCard();
   }
+  openFeedbackModal(): void {
+    window.open('/learner-feedback', '_blank');
+  }
 }

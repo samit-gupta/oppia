@@ -199,3 +199,19 @@ oppia-progress-tracker {
     width: 100px;
   }
 }
+.card-navigation-control .row-item-feedback {
+  align-items: center;
+  display: flex;
+}
+
+.oppia-feedback-button {
+  color: #0d48a1;
+  margin-left: 8px;
+}
+
+/* Show feedback button only on mobile */
+@media (min-width: 481px) {
+  .oppia-feedback-button {
+    display: none;
+  }
+}

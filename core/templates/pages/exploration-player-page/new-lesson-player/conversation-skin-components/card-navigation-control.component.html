@@ -14,6 +14,14 @@
       </ng-container>
     </div>
     <oppia-progress-tracker *ngIf="progressTrackerIsVisible" [userIsLoggedIn]="userIsLoggedIn" [ngClass]="{ 'hide-save-btn': userIsLoggedIn }"></oppia-progress-tracker>
+    <div class="row-item row-item-feedback">
+      <button mat-icon-button
+              class="oppia-feedback-button"
+              aria-label="Feedback"
+              (click)="openFeedbackModal()">
+        <i class="material-icons" aria-hidden="true">feedback</i>
+      </button>
+    </div>
     <div *ngIf="hasNext && navigationThroughCardHistoryIsEnabled" class="row-item row-item-next-card">
       <button mat-raised-button
               (click)="moveForwardByOneCard()"
